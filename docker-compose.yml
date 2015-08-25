@@ -1,0 +1,8 @@
+web:
+  build: .
+  ports:
+    - "80:80"
+  restart: always
+  volumes:
+    - ./app/web/app/uploads:/app/web/app/uploads
+  working_dir: /app
