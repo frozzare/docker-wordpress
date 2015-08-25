@@ -21,6 +21,11 @@ Now you can run your docker containers.
 $ docker-compose run
 ```
 
+# Normal WordPress structure
+
+* Change last `RUN` in `Dockerfile` to `RUN rm -r /app/wp-content/uploads/`
+* Change `volumes` in `docker-compose.yml` to `./app/wp-content/uploads:/app/wp-content/uploads`
+
 # License
 
 MIT © [Fredrik Forsmo](https://github.com/frozzare)
